@@ -452,7 +452,7 @@ proc ::MCSS::getMetadata {} {
 	set nSources [llength [array names ::MCSS::SOURCES]];
 	#
 	append result "\n- Resampling: \`$::MCSS::M\`";
-	append result "\n- Range: \`[join $::MCSS::RANGE {,}]\`";
+	append result "\n- Random_range: \`[join $::MCSS::RANGE {,}]\`";
 	append result "\n- Format_string: \`$::MCSS::FORMAT_STRING\`";
 	#
 	append result "\n\#\#\# Notes";
