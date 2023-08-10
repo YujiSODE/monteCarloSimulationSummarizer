@@ -190,7 +190,7 @@ namespace eval ::MCSS {
 };
 #
 #it returns frequencies based on a given list
-proc ::MCSS::getFreq {list} {
+proc ::MCSS::getFreq list {
 	# - $list: a numerical list
 	#
 	variable ::MCSS::FORMAT_STRING;
@@ -299,7 +299,7 @@ proc ::MCSS::INCLUDE path {
 };
 #
 #it is interface to input a single result of random simulation, and returns input list size
-proc ::MCSS::INPUT {list} {
+proc ::MCSS::INPUT list {
 	# - $list: a numerical list
 	#
 	#when the given list size is less than one
@@ -627,7 +627,7 @@ proc ::MCSS::reset {} {
 #		- `${outputName}_MCSS[numbers]_INFO.csv`: summarized information in CSV file
 #		- `${outputName}_MCSS[numbers]_DATA.csv`: frequency distribution in CSV file
 #
-proc ::MCSS::OUTPUT {outputName} {
+proc ::MCSS::OUTPUT outputName {
 	# - $outputName: a name for a keyword of the new directory to output
 	#
 	variable ::MCSS::SOURCES;
