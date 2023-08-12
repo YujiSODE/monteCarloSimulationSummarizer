@@ -344,6 +344,8 @@ proc ::MCSS::INPUT list {
 	#
 	#the coefficient of variation
 	set _cv 0.0;
+	#
+	set i 0;
 	#---
 	#
 	#number of sample sets
@@ -355,7 +357,12 @@ proc ::MCSS::INPUT list {
 	foreach {name value} $freq {
 		lappend _names $name;
 		lappend _values $value;
-		lappend _names_values [expr {double($name)*double($value)}];
+		#
+		set i 0;
+		while {$i<$value} {
+			lappend _names_values $name;
+			incr i 1;
+		};
 	};
 	#
 	set _nNames [llength $_names];
@@ -389,12 +396,17 @@ proc ::MCSS::INPUT list {
 	lappend ::MCSS::INFO(avg) $_avg;
 	#
 	#moments
-	foreach e $_values {
-		set _d [expr {double($e)-$_avg}];
+	foreach {name value} $freq {
+		set _d [expr {double($name)-$_avg}];
 		#
-		lappend _M2 [expr {$_d**2}];
-		lappend _M3 [expr {$_d**3}];
-		lappend _M4 [expr {$_d**4}];
+		set i 0;
+		while {$i<$value} {
+			lappend _M2 [expr {$_d**2}];
+			lappend _M3 [expr {$_d**3}];
+			lappend _M4 [expr {$_d**4}];
+			#
+			incr i 1;
+		};
 	};
 	#
 	set _std [expr {sqrt(avg($_M2))}];
@@ -419,7 +431,7 @@ proc ::MCSS::INPUT list {
 	lappend ::MCSS::INFO(kurtosis_normal) $_kurtosis;
 	#
 	#---
-	unset freq _names _values _names_values _nNames _n _xMin _xMax _range _score25 _score50 _score75 _d _M2 _M3 _M4 _avg _std _moment3 _moment4 _skewness _kurtosis _cv;
+	unset freq _names _values _names_values _nNames _n _xMin _xMax _range _score25 _score50 _score75 _d _M2 _M3 _M4 _avg _std _moment3 _moment4 _skewness _kurtosis _cv i;
 	#---
 	return [llength $list];
 };
