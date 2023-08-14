@@ -4,6 +4,7 @@
 
 ## [0.1 beta] - 2023-08-14
 ## Changed
+- [`monteCarloSimulationSummarizer.tcl`] `proc ::MCSS::ADD_NOTE`: changed processes to deal with additional notes
 - [`monteCarloSimulationSummarizer.tcl`] lines 18-21: changed some descriptions
 
 ## [0.1 beta] - 2023-08-12
