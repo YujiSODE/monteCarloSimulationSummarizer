@@ -15,10 +15,10 @@
 #command `INPUT` inputs a single result of random simulation, and returns input list size
 #command `OUTPUT` returns a keyword named after `$outputName` and generates a new directory, where to output three results and some additional sources
 #
-#	**three main results to output**
-#		- `${outputName}_MCSS[numbers]_LOG.md`: log in Markdown file
-#		- `${outputName}_MCSS[numbers]_INFO.csv`: summarized information in CSV file
-#		- `${outputName}_MCSS[numbers]_DATA.csv`: frequency distribution in CSV file
+#	**three main results to output**  
+#	- `${outputName}_MCSS[numbers]_LOG.md`: log in Markdown file
+#	- `${outputName}_MCSS[numbers]_INFO.csv`: summarized information in CSV file
+#	- `${outputName}_MCSS[numbers]_DATA.csv`: frequency distribution in CSV file
 #
 #--------------------------------------------------------------------
 #=== Description ===
