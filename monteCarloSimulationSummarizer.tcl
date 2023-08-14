@@ -272,11 +272,15 @@ proc ::MCSS::ADD_NOTE {name value} {
 	#
 	variable ::MCSS::NOTE;
 	#
-	if {![llength [array names ::MCSS::NOTE $name]]} {
+	set namesList [array names ::MCSS::NOTE $name];
+	#
+	if {![llength $namesList]} {
 		array set ::MCSS::NOTE [list $name $value];
 	} else {
-		set $::MCSS::NOTE($name) $value;
+		set $::MCSS::NOTE($name) [expr {!(${name} in ${namesList})?${value}:[append ::MCSS::NOTE($name) "\u0020$value"]}];
 	};
+	#
+	unset namesList;
 	#
 	return [list $name $value];
 };
@@ -294,6 +298,7 @@ proc ::MCSS::INCLUDE path {
 		array set ::MCSS::SOURCES {};
 	};
 	set ::MCSS::SOURCES($n) $path;
+	unset n;
 	#
 	return $path;
 };
