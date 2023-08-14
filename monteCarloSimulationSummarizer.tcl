@@ -15,10 +15,10 @@
 #command `INPUT` inputs a single result of random simulation, and returns input list size
 #command `OUTPUT` returns a keyword named after `$outputName` and generates a new directory, where to output three results and some additional sources
 #
-#	**three main results to output**
-#		- `${outputName}_MCSS[numbers]_LOG.md`: log in Markdown file
-#		- `${outputName}_MCSS[numbers]_INFO.csv`: summarized information in CSV file
-#		- `${outputName}_MCSS[numbers]_DATA.csv`: frequency distribution in CSV file
+#	**three main results to output**  
+#	- `${outputName}_MCSS[numbers]_LOG.md`: log in Markdown file
+#	- `${outputName}_MCSS[numbers]_INFO.csv`: summarized information in CSV file
+#	- `${outputName}_MCSS[numbers]_DATA.csv`: frequency distribution in CSV file
 #
 #--------------------------------------------------------------------
 #=== Description ===
@@ -272,11 +272,15 @@ proc ::MCSS::ADD_NOTE {name value} {
 	#
 	variable ::MCSS::NOTE;
 	#
-	if {![llength [array names ::MCSS::NOTE $name]]} {
+	set namesList [array names ::MCSS::NOTE $name];
+	#
+	if {![llength $namesList]} {
 		array set ::MCSS::NOTE [list $name $value];
 	} else {
-		set $::MCSS::NOTE($name) $value;
+		set $::MCSS::NOTE($name) [expr {!(${name} in ${namesList})?${value}:[append ::MCSS::NOTE($name) "\u0020$value"]}];
 	};
+	#
+	unset namesList;
 	#
 	return [list $name $value];
 };
@@ -294,6 +298,7 @@ proc ::MCSS::INCLUDE path {
 		array set ::MCSS::SOURCES {};
 	};
 	set ::MCSS::SOURCES($n) $path;
+	unset n;
 	#
 	return $path;
 };
