@@ -3,6 +3,9 @@
 ## [Unreleased]
 
 ## [0.1 beta] - 2023-08-14
+## Added
+- [`MCSS_TEMPLATE_GEN.tcl`]: added template generator
+
 ## Changed
 - [`monteCarloSimulationSummarizer.tcl`] line 280: changed processes to deal with additional notes in `proc ::MCSS::ADD_NOTE`
 - [`monteCarloSimulationSummarizer.tcl`] lines 18-21: changed some descriptions
