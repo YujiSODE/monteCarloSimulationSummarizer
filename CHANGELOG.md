@@ -2,6 +2,10 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1 beta] - 2023-08-14
+## Changed
+- [`monteCarloSimulationSummarizer.tcl`] lines 18-21: changed some descriptions
+
 ## [0.1 beta] - 2023-08-12
 ## Added
 - [`MCSS_INPUT.tcl`]: Shell interface for the Monte Carlo Simulation Summarizer (MCSS)
