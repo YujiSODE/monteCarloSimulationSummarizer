@@ -5,6 +5,18 @@
 
 ## [0.1 beta] - 2023-08-18
 ## Changed
+- [`MCSS_TEMPLATE_GEN.tcl`] lines 89-91:  
+  ```
+  if {$argc>0} {
+  	puts stdout [_MCSS_TEMP_GEN [lindex $argv 0] $argv0];
+  }
+  ```
+- [`MCSS_TEMPLATE_GEN.tcl`] lines 84-86:  
+  ```
+	unset name dir dir0 temp C;
+	#
+	return $tempName;
+  ```
 - [`MCSS_TEMPLATE_GEN.tcl`] lines 80-82:  
   ```
 	set C [open $tempName w];
