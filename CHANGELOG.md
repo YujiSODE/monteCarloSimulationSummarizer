@@ -2,8 +2,14 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
-
 ## [0.1 beta] - 2023-08-18
+## Added
+- [`MCSS_TEMPLATE_GEN.tcl`] lines 84 and 85:
+  ```
+	file attributes $tempName -permissions rwxrwxrwx;
+	#
+  ```
+
 ## Changed
 - [`MCSS_TEMPLATE_GEN.tcl`] lines 89-91:  
   ```
