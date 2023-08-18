@@ -81,6 +81,8 @@ proc _MCSS_TEMP_GEN {name dir} {
 	puts -nonewline $C $temp;
 	close $C;
 	#
+	file attributes $tempName -permissions rwxrwxrwx;
+	#
 	unset name dir dir0 temp C;
 	#
 	return $tempName;
