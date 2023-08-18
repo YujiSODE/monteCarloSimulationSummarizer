@@ -2,6 +2,16 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+
+## [0.1 beta] - 2023-08-18
+## Added
+- [`monteCarloSimulationSummarizer.tcl`] lines 765-767:
+  ```
+			close $C_src;
+			close $C;
+			#
+  ```
+
 ## [0.1 beta] - 2023-08-14
 ## Added
 - [`MCSS_TEMPLATE_GEN.tcl`]: added template generator
