@@ -59,7 +59,7 @@ proc _MCSS_TEMP_GEN {name dir} {
 	#additional sources
 	append temp "\n\#\n\#=== additional sources ===";
 	append temp "\n\#\n\#this file";
-	append temp "\n::MCSS::INCLUDE ${tempName}";
+	append temp "\n::MCSS::INCLUDE ${tempName}\;";
 	#
 	#data input
 	append temp "\n\#\n\#=== data input ===";
