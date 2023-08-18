@@ -762,6 +762,9 @@ proc ::MCSS::OUTPUT outputName {
 			#
 			fcopy $C_src $C;
 			#
+			close $C_src;
+			close $C;
+			#
 			incr i 1;
 		};
 	};
