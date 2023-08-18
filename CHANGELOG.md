@@ -7,10 +7,9 @@
 ## Changed
 - [`MCSS_TEMPLATE_GEN.tcl`] lines 80-82:  
   ```
-  	set C [open $tempName w];
+	set C [open $tempName w];
 	puts -nonewline $C $temp;
 	close $C;
-
   ```
 - [`MCSS_TEMPLATE_GEN.tcl`] line 66:  
   ```
