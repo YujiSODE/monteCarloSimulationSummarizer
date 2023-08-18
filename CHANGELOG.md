@@ -5,6 +5,10 @@
 
 ## [0.1 beta] - 2023-08-18
 ## Changed
+- [`MCSS_TEMPLATE_GEN.tcl`] line 66:  
+  ```
+  	append temp "\n\#command `::MCSS::INPUT` or Tcl script is available\n\#";
+  ```
 - [`MCSS_TEMPLATE_GEN.tcl`] line 62:  
   ```
   	append temp "\n::MCSS::INCLUDE ${tempName}\;";
