@@ -28,11 +28,13 @@ proc _MCSS_TEMP_GEN {name dir} {
 	# - $dir : a path to the MCSS
 	#
 	set name [regsub -all {[\s\t]} $name {_}];
+	set tempName "${name}_TEMP.tcl";
 	#
 	set dir [file dirname $dir];
 	set dir0 [pwd];
 	#
-	set temp "\#MCSS\n\#${name}.tcl";
+	set temp "\#!/bin/sh\n\# the next line restarts using tclsh \\\nexec tclsh \"\$0\" \$\{1+\"\$@\"\}\n\#\#===================================================================";
+	append temp "\#\n\#MCSS\n\#${tempName}";
 	#
 	#channel to output
 	set C {};
@@ -57,10 +59,11 @@ proc _MCSS_TEMP_GEN {name dir} {
 	#additional sources
 	append temp "\n\#\n\#=== additional sources ===";
 	append temp "\n\#\n\#this file";
-	append temp "\n::MCSS::INCLUDE ${name}.tcl\;";
+	append temp "\n::MCSS::INCLUDE ${tempName}";
 	#
 	#data input
 	append temp "\n\#\n\#=== data input ===";
+	append temp "\n\#command `::MCSS::INPUT` or Tcl script is available\n\#";
 	append temp "\n\#\n::MCSS::INPUT \{1 2 2 3 3 3 4 4 5\}\;";
 	append temp "\n\#\n::MCSS::INPUT \{1 2 2 3 3 3 4 4 5\}\;";
 	append temp "\n\#\n::MCSS::INPUT \{1 2 2 3 3 3 4 4 5\}\;";
@@ -74,15 +77,17 @@ proc _MCSS_TEMP_GEN {name dir} {
 	#
 	append temp "\n\#\nputs stdout \"\#---- end ---\"\;";
 	#
-	#To do
-	#$C
-		#test code
-		puts stdout $temp;
+	set C [open $tempName w];
+	puts -nonewline $C $temp;
+	close $C;
 	#
-	return "${name}.tcl";
+	unset name dir dir0 temp C;
+	#
+	return $tempName;
 };
 #
-puts stdout [_MCSS_TEMP_GEN [lindex $argv 0] $argv0];
-#
+if {$argc>0} {
+	puts stdout [_MCSS_TEMP_GEN [lindex $argv 0] $argv0];
+}
 exit;
 #
