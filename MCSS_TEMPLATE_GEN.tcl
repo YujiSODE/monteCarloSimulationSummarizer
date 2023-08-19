@@ -77,7 +77,7 @@ proc _MCSS_TEMP_GEN {name dir} {
 	#
 	append temp "\n\#\nputs stdout \"\#---- end ---\"\;";
 	#
-	set C [open $tempName w];
+	set C [open "${dir0}/$tempName" w];
 	puts -nonewline $C $temp;
 	close $C;
 	#
