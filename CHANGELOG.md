@@ -2,6 +2,20 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1 beta] - 2023-08-19
+## Added
+- [`EXAMPLES/example02_MCSS1692432667/example02_TEMP.tcl`]: added a sample file
+- [`EXAMPLES/example02_MCSS1692432667/example02_MCSS1692432667_LOG.md`]: added a sample file
+- [`EXAMPLES/example01_MCSS1692428030/example01_TEMP.tcl`]: added a sample file
+- [`EXAMPLES/example01_MCSS1692428030/example01_MCSS1692428030_LOG.md`]: added a sample file
+- [`EXAMPLES/_example_TEMP.tcl`]: added a sample file
+
+## Fixed
+- [`MCSS_TEMPLATE_GEN.tcl`] line 80:
+  ```
+  	set C [open "${dir0}/$tempName" w];
+  ```
+
 ## [0.1 beta] - 2023-08-18
 ## Added
 - [`MCSS_TEMPLATE_GEN.tcl`] lines 84 and 85:
