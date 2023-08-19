@@ -2,6 +2,13 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1 beta] - 2023-08-19
+## Fixed
+- [`MCSS_TEMPLATE_GEN.tcl`] line 80:
+  ```
+  	set C [open "${dir0}/$tempName" w];
+  ```
+
 ## [0.1 beta] - 2023-08-18
 ## Added
 - [`MCSS_TEMPLATE_GEN.tcl`] lines 84 and 85:
