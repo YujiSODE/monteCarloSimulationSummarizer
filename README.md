@@ -7,6 +7,14 @@ GitHub: https://github.com/YujiSODE/monteCarloSimulationSummarizer
 >See LICENSE or http://opensource.org/licenses/mit-license.php  
 ______
 
+## Synopsis
+This tool generates a new directory, where to output three results and some additional sources:  
+**three main results to output**
+- `${outputName}_MCSS[numbers]_LOG.md`: log in `Markdown` file
+- `${outputName}_MCSS[numbers]_INFO.csv`: summarized information in `CSV` file
+- `${outputName}_MCSS[numbers]_DATA.csv`: frequency distribution in `CSV` file
+
+
 ## Scripts
 - [`monteCarloSimulationSummarizer.tcl`](monteCarloSimulationSummarizer.tcl)
 - [`MCSS_INPUT.tcl`](MCSS_INPUT.tcl)
