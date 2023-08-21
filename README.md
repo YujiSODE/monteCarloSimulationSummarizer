@@ -8,12 +8,16 @@ GitHub: https://github.com/YujiSODE/monteCarloSimulationSummarizer
 ______
 
 ## Synopsis
-This tool generates a new directory, where to output three results and some additional sources  
+This tool generates a new directory, where to output three results and some additional sources.
+
 ### Three main results to output
 - `${outputName}_MCSS[numbers]_LOG.md`: log in `Markdown` file
 - `${outputName}_MCSS[numbers]_INFO.csv`: summarized information in `CSV` file
 - `${outputName}_MCSS[numbers]_DATA.csv`: frequency distribution in `CSV` file
 
+## Interfaces
+- [`MCSS_INPUT.tcl`](MCSS_INPUT.tcl):
+- [`MCSS_TEMPLATE_GEN.tcl`](MCSS_TEMPLATE_GEN.tcl):
 
 ## Scripts
 - [`monteCarloSimulationSummarizer.tcl`](monteCarloSimulationSummarizer.tcl)
