@@ -6,3 +6,8 @@ GitHub: https://github.com/YujiSODE/monteCarloSimulationSummarizer
 >This software is released under the MIT License.  
 >See LICENSE or http://opensource.org/licenses/mit-license.php  
 ______
+
+##
+
+## Compatibility
+- Tcl `8.6+`
