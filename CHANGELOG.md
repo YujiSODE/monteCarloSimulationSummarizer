@@ -2,6 +2,10 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1 beta] - 2023-08-22
+## Added
+- [`README.md`] lines 9-31: added some descriptions
+
 ## [0.1 beta] - 2023-08-19
 ## Added
 - [`EXAMPLES/example02_MCSS1692432667/example02_TEMP.tcl`]: added a sample file
