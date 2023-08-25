@@ -34,7 +34,7 @@ proc _MCSS_TEMP_GEN {name dir} {
 	set dir0 [pwd];
 	#
 	set temp "\#!/bin/sh\n\# the next line restarts using tclsh \\\nexec tclsh \"\$0\" \$\{1+\"\$@\"\}\n\#\#===================================================================";
-	append temp "\#\n\#MCSS\n\#${tempName}";
+	append temp "\n\#\n\#MCSS\n\#${tempName}";
 	#
 	#channel to output
 	set C {};

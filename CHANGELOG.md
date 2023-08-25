@@ -3,6 +3,12 @@
 ## [Unreleased]
 
 ## [0.1 beta] - 2023-08-25
+## Fixed
+- [`MCSS_TEMPLATE_GEN.tcl`] line 37:
+  ```
+  	append temp "\n\#\n\#MCSS\n\#${tempName}";
+  ```
+
 ## Changed
 - [`README.md`] line 23:
   ```
