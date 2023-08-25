@@ -2,6 +2,13 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1 beta] - 2023-08-25
+## Changed
+- [`README.md`] line 23:
+  ```
+  - [`monteCarloSimulationSummarizer.tcl`](monteCarloSimulationSummarizer.tcl): main script
+  ```
+
 ## [0.1 beta] - 2023-08-22
 ## Added
 - [`README.md`] lines 9-31: added some descriptions
