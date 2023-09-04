@@ -720,8 +720,16 @@ proc ::MCSS::OUTPUT outputName {
 	puts -nonewline $C "\n|[lindex $_listHead 0]|[lindex $_listHead 1]|[lindex $_listHead 2]|";
 	puts -nonewline $C "\n|---:|---:|---:|";
 	#
-	foreach {name value std} $_listBody {
+	#index: (0 to 9) *3 elements = (0 to 29)
+	foreach {name value std} [lrange $_listBody 0 29] {
 		puts -nonewline $C "\n|${name}|${value}|${std}|";
+	};
+	#
+	if {[llength $_listBody]>30} {
+		puts -nonewline $C "\n...";
+		foreach {name value std} [lrange $_listBody end-2 end] {
+			puts -nonewline $C "\n|${name}|${value}|${std}|";
+		};
 	};
 	#
 	close $C;

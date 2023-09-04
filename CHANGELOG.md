@@ -2,6 +2,10 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1 beta] - 2023-09-05
+## Added
+- [`monteCarloSimulationSummarizer.tcl`] lines 723-724 and 728-734: simplified a data table in the output log
+
 ## [0.1 beta] - 2023-08-25
 ## Fixed
 - [`MCSS_TEMPLATE_GEN.tcl`] line 37:
