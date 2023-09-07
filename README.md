@@ -21,8 +21,8 @@ This tool generates a new directory, where to output three results and some addi
 
 ## Scripts
 - [`monteCarloSimulationSummarizer.tcl`](monteCarloSimulationSummarizer.tcl): main script
-- [`MCSS_INPUT.tcl`](MCSS_INPUT.tcl): shell interface for the Monte Carlo Simulation Summarizer (MCSS).
-- [`MCSS_TEMPLATE_GEN.tcl`](MCSS_TEMPLATE_GEN.tcl): shell interface of template generator for the Monte Carlo Simulation Summarizer (MCSS).
+- [`MCSS_INPUT.tcl`](MCSS_INPUT.tcl): shell interface for the MCSS.
+- [`MCSS_TEMPLATE_GEN.tcl`](MCSS_TEMPLATE_GEN.tcl): shell interface of template generator for the MCSS.
 
 ## Library
 - Sode, Y. 2018. lSum.tcl: https://gist.github.com/YujiSODE/1f9a4e2729212691972b196a76ba9bd0
