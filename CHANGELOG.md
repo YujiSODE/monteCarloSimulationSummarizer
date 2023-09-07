@@ -2,6 +2,14 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1 beta] - 2023-09-07
+## Changed
+- [`README.md`] lines 24 and 25:  
+```
+- [`MCSS_INPUT.tcl`](MCSS_INPUT.tcl): shell interface for the MCSS.
+- [`MCSS_TEMPLATE_GEN.tcl`](MCSS_TEMPLATE_GEN.tcl): shell interface of template generator for the MCSS.
+```
+
 ## [0.1 beta] - 2023-09-05
 ## Added
 - [`monteCarloSimulationSummarizer.tcl`] lines 723-724 and 728-734: simplified a data table in the output log
