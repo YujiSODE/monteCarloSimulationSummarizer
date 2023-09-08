@@ -4,6 +4,9 @@
 
 ## [0.1 beta] - 2023-09-09
 
+## Changed
+- [`README.md`] lines 32 and 33: moved descriptions from lines 27 and 28
+
 ## Added
 - [`MCSS_TEMPLATE_GEN.tcl`] line 23:  
   ```
