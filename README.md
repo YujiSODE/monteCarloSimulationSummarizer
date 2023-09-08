@@ -24,6 +24,8 @@ There are two input interfaces (shell input and script input).
 or  
 `tclsh MCSS_INPUT.tcl splitChar formatString values ?values ... values?`
 
+The above commands generates a new directory, where to output [results](#three-main-results-to-output).
+
 #### arguments for shell input
 - `$splitChars`: characters that are used to split each value of `$values`
 - `$formatString`: a format string using % conversion specifiers (e.g., `%.4f`). See [`format`](https://www.tcl.tk/man/tcl8.6/TclCmd/format.html)
