@@ -3,7 +3,12 @@
 ## [Unreleased]
 
 ## [0.1 beta] - 2023-09-09
+
+## Added
+- [`README.md`] lines 36-45: added descriptions
+
 ## Changed
+- [`README.md`] line 29: changed descriptions
 - [`README.md`] lines 19-34: changed descriptions
 - [`README.md`] lines 19 and 20:
   ```
