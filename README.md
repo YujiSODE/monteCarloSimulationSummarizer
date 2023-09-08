@@ -44,6 +44,7 @@ or
 The above commands generates a new template file named `"${name}_TEMP.tcl"`. See [_example_TEMP.tcl](EXAMPLES/_example_TEMP.tcl).
 
 #### 2-1. Generated template file
+Commands in [`monteCarloSimulationSummarizer.tcl`](monteCarloSimulationSummarizer.tcl) and `Tcl script` is available in this output template file. See [Sample files](EXAMPLES/).
 
 ## Scripts
 - [`monteCarloSimulationSummarizer.tcl`](monteCarloSimulationSummarizer.tcl): main script
