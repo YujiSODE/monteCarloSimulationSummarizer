@@ -20,6 +20,7 @@ exec tclsh "$0" ${1+"$@"}
 #**arguments**
 # - $name : a name for a template file
 #
+#output file is `"$name_TEMP.tcl"`
 ##===================================================================
 #
 #$arg := {splitChar formatString values values ...}
