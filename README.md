@@ -41,6 +41,8 @@ or
 **Arguments to generate template file**
 - `$name` : a name for a template file
 
+The above commands generates a new template file named `"${name}_TEMP.tcl"`. See [_example_TEMP.tcl](EXAMPLES/_example_TEMP.tcl).
+
 #### 2-1. Generated template file
 
 ## Scripts
