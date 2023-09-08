@@ -7,7 +7,7 @@
 ## Added
 - [`MCSS_TEMPLATE_GEN.tcl`] line 23:  
   ```
-  #output file is `"$name_TEMP.tcl"`
+  #output file is `"${name}_TEMP.tcl"`
   ``` 
 - [`README.md`] lines 36-45: added descriptions
 
