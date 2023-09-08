@@ -4,6 +4,7 @@
 
 ## [0.1 beta] - 2023-09-09
 ## Changed
+- [`README.md`] lines 19-34: changed descriptions
 - [`README.md`] lines 19 and 20:
   ```
   ### 1. **shell input:** [`MCSS_INPUT.tcl`](MCSS_INPUT.tcl)
