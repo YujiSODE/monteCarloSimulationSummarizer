@@ -5,6 +5,10 @@
 ## [0.1 beta] - 2023-09-09
 
 ## Added
+- [`MCSS_TEMPLATE_GEN.tcl`] line 23:  
+  ```
+  #output file is `"$name_TEMP.tcl"`
+  ``` 
 - [`README.md`] lines 36-45: added descriptions
 
 ## Changed
