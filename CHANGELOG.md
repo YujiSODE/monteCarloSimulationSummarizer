@@ -2,8 +2,20 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
-## [0.1 beta] - 2023-09-09
+## [0.1 beta] - 2023-09-11
+## Fixed
+- [`README.md`] line 36:  
+  ```
+  #### 2-1. Template file
+  ```
+- [`README.md`] lines 46-48:  
+  ```
+  #### 2-2. Generated template file
+  Commands in [`monteCarloSimulationSummarizer.tcl`](monteCarloSimulationSummarizer.tcl) and `Tcl script` is available in this output template file.  
+  See [Sample files](EXAMPLES/).  
+  ```
 
+## [0.1 beta] - 2023-09-09
 ## Added
 - [`README.md`] lines 34-48: added descriptions for `### 2. script input`
 
