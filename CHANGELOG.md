@@ -2,8 +2,11 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
-## [0.1 beta] - 2023-09-09
+## [0.1 beta] - 2023-09-11
+## Fixed
+- [`README.md`] lines 46-48:
 
+## [0.1 beta] - 2023-09-09
 ## Added
 - [`README.md`] lines 34-48: added descriptions for `### 2. script input`
 
