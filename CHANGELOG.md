@@ -2,6 +2,10 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1.1 beta] - 2023-09-30
+## Fixed
+- [`monteCarloSimulationSummarizer.tcl`] line 429: `	set _skewness [expr {!!$_std?$_moment3/($_std**3):$_moment3/$::MCSS::EPSILON}];`
+
 ## Released: [0.1 beta] - 2023-09-16
 ## [0.1 beta] - 2023-09-11
 ## Fixed
