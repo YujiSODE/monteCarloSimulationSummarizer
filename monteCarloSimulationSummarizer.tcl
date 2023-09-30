@@ -426,13 +426,13 @@ proc ::MCSS::INPUT list {
 	set _moment4 [expr {avg($_M4)}];
 	lappend ::MCSS::INFO(4th_moment) $_moment4;
 	#
-	set _skewness [expr {$_moment3/($_std**3)}];
+	set _skewness [expr {!!$_std?$_moment3/($_std**3):$_moment3/$::MCSS::EPSILON}];
 	lappend ::MCSS::INFO(skewness) $_skewness;
 	#
-	set _kurtosis [expr {$_moment4/($_std**4)}];
+	set _kurtosis [expr {!!$_std?$_moment4/($_std**4):$_moment4/$::MCSS::EPSILON}];
 	lappend ::MCSS::INFO(kurtosis) $_kurtosis;
 	#
-	set _kurtosis [expr {$_moment4/($_std**4)-3.0}];
+	set _kurtosis [expr {$_kurtosis-3.0}];
 	lappend ::MCSS::INFO(kurtosis_normal) $_kurtosis;
 	#
 	#---
