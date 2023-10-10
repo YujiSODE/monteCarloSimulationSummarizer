@@ -1,6 +1,9 @@
 # Change Log
 # monteCarloSimulationSummarizer
 ## [Unreleased]
+## [0.1.1 beta] - 2023-10-10
+## Added
+- [`monteCarloSimulationSummarizer.tcl`] lines 71-75, 130 and 792-812: [`majorSign.tcl`](https://github.com/YujiSODE/majorSign) was implemented as `getMajorSign(x1,x2,x3)` in the namespace `::tcl::mathfunc`
 
 ## [0.1.1 beta] - 2023-09-30
 ## Fixed

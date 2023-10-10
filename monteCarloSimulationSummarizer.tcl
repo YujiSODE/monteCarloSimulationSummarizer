@@ -68,6 +68,11 @@
 #   - `$list`: a numerical list
 #   - `$m`: an optional mean value
 #
+#--------------------------------------------------------------------
+#--- majorSign/majorSign.tcl (Yuji SODE, 2023, the MIT License): https://github.com/YujiSODE/majorSign ---
+# - `getMajorSign(x1,x2,x3)`: the major sign estimator by three values
+#   - `$x1`, `$x2` and `$x3`: numerical values
+#
 ##===================================================================
 set auto_noexec 1;
 package require Tcl 8.6;
@@ -122,6 +127,7 @@ namespace eval ::tcl::mathfunc {
 		return [expr {lSum($v)/($n-1)}];
 	};
 };
+#
 #--------------------------------------------------------------------
 #*** <namespace ::MCSS> ***
 namespace eval ::MCSS {
@@ -781,5 +787,26 @@ proc ::MCSS::OUTPUT outputName {
 	unset _t i n timestamp dir0 dir C C_src _log _csvDist _csvInfo _listBody _listHead;
 	#
 	return $outputName;
+};
+#
+#--------------------------------------------------------------------
+#=== majorSign/majorSign.tcl (Yuji SODE, 2023, the MIT License): https://github.com/YujiSODE/majorSign ===
+#the major sign estimator by three values.
+#
+proc majorSign {x1 x2 x3} {
+	# - $x1, $x2 and $x3: numerical values
+	#
+	set sgn [expr {int(8)}];
+	#
+	set sgn [expr {$x1<0?$sgn>>1:$sgn<<1}];
+	set sgn [expr {$x2<0?$sgn>>1:$sgn<<1}];
+	set sgn [expr {$x3<0?$sgn>>1:$sgn<<1}];
+	#
+	return [expr {$sgn<8?-1:1}];
+};
+#
+proc ::tcl::mathfunc::getMajorSign {x1 x2 x3} {
+	# - $x1, $x2 and $x3: numerical values
+	return [majorSign $x1 $x2 $x3];
 };
 #
