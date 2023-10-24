@@ -54,6 +54,7 @@ This template file generates a new directory, where to output [results](#three-m
 - [`MCSS_TEMPLATE_GEN.tcl`](MCSS_TEMPLATE_GEN.tcl): shell interface of template generator for the MCSS.
 
 ## Library
+- Sode, Y. 2023. majorSign/majorSign.tcl, the MIT License: https://github.com/YujiSODE/majorSign
 - Sode, Y. 2018. lSum.tcl: https://gist.github.com/YujiSODE/1f9a4e2729212691972b196a76ba9bd0
 
 ## Compatibility
