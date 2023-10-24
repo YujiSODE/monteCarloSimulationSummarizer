@@ -2,6 +2,10 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## [0.1.2 beta] - 2023-10-24
+## Added
+- [`README.md`] line 57: `- Sode, Y. 2023. majorSign/majorSign.tcl, the MIT License: https://github.com/YujiSODE/majorSign`
+
 ## Released: [0.1.1 beta] - 2023-10-10
 ## [0.1.1 beta] - 2023-10-10
 ## Added
