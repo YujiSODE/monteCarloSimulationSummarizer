@@ -1,6 +1,9 @@
 # Change Log
 # monteCarloSimulationSummarizer
 ## [Unreleased]
+## [0.1.2 beta] - 2023-10-27
+## Added
+- [`tsvReader.tcl`]: added `TSV reader`
 
 ## [0.1.2 beta] - 2023-10-24
 ## Added
