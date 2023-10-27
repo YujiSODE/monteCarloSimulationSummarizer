@@ -3,7 +3,11 @@
 ## [Unreleased]
 ## [0.1.2 beta] - 2023-10-27
 ## Added
-- [`tsvReader.tcl`]: added `TSV reader`
+- [`README.md`] line 55:
+  ```
+  - [`tsvReader.tcl`](tsvReader.tcl): TSV Reader that loads the first two columnar contents as xy data.
+  ```
+- [`tsvReader.tcl`]: added `TSV reader` that loads the first two columnar contents as xy data
 
 ## [0.1.2 beta] - 2023-10-24
 ## Added
