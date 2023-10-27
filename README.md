@@ -52,6 +52,7 @@ This template file generates a new directory, where to output [results](#three-m
 - [`monteCarloSimulationSummarizer.tcl`](monteCarloSimulationSummarizer.tcl): main script
 - [`MCSS_INPUT.tcl`](MCSS_INPUT.tcl): shell interface for the MCSS.
 - [`MCSS_TEMPLATE_GEN.tcl`](MCSS_TEMPLATE_GEN.tcl): shell interface of template generator for the MCSS.
+- [`tsvReader.tcl`](tsvReader.tcl): TSV Reader that loads the first two columnar contents as xy data.
 
 ## Library
 - Sode, Y. 2023. majorSign/majorSign.tcl, the MIT License: https://github.com/YujiSODE/majorSign
