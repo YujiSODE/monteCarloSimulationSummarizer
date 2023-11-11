@@ -1,6 +1,8 @@
 # Change Log
 # monteCarloSimulationSummarizer
 ## [Unreleased]
+
+## Released: [0.1.2 beta] - 2023-11-11
 ## [0.1.2 beta] - 2023-10-27
 ## Added
 - [`README.md`] line 55:
