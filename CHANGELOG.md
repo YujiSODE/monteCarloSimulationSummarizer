@@ -2,6 +2,9 @@
 # monteCarloSimulationSummarizer
 ## [Unreleased]
 
+## Released: [1.0] - 2024-06-20
+## [1.0] - 2024-06-20
+
 ## Released: [0.1.2 beta] - 2023-11-11
 ## [0.1.2 beta] - 2023-10-27
 ## Added
